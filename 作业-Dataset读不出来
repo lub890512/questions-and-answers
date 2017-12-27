@@ -1,0 +1,11 @@
+with open(file_checkin) as f:
+    df_checkin = pd.DataFrame(json.loads(line) for line in f)
+df_checkin.head(2)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-11-3713339f3d0f> in <module>()
+----> 1 with open(file_checkin) as f:
+      2     df_checkin = pd.DataFrame(json.loads(line) for line in f)
+      3 df_checkin.head(2)
+
+TypeError: expected str, bytes or os.PathLike object, not list
